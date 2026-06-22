@@ -1,170 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Adidas Clone</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <link rel="stylesheet" href="adidas.css">
 
 </head>
-
 <body>
 
-
-<!-- Top Bar -->
-
 <div class="top-bar">
-
 🔥 EXTRA 10% OFF ON ONLINE PAYMENTS
-
 </div>
 
+<nav class="navbar navbar-expand-lg navbar-light">
+
+<div class="container">
 
 <a class="navbar-brand" href="#">
-
-    <img src="adidas logo.png"
-         alt="Adidas Logo"
-         class="logo">
-
+<img src="adidas logo.png" alt="Adidas Logo" class="logo">
 </a>
 
-<button class="navbar-toggler"
-
-data-bs-toggle="collapse"
-
-data-bs-target="#menu">
-
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 <span class="navbar-toggler-icon"></span>
-
 </button>
 
-
-
-<div class="collapse navbar-collapse"
-
-id="menu">
+<div class="collapse navbar-collapse" id="menu">
 
 <ul class="navbar-nav ms-auto">
 
-
 <li class="nav-item dropdown">
 
-<a class="nav-link dropdown-toggle"
-
-href="#"
-
-data-bs-toggle="dropdown">
-
+<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
 Men
-
 </a>
 
 <ul class="dropdown-menu">
 
-<li>
+<li><a class="dropdown-item" href="#">Shoes</a></li>
 
-<a class="dropdown-item"
+<li><a class="dropdown-item" href="#">T-Shirts</a></li>
 
-href="#">
+<li><a class="dropdown-item" href="#">Jackets</a></li>
 
-Shoes
-
-</a>
-
-</li>
-
-<li>
-
-<a class="dropdown-item"
-
-href="#">
-
-T-Shirts
-
-</a>
-
-</li>
-
-<li>
-
-<a class="dropdown-item">
-
-Jackets
-
-</a>
-
-</li>
-
-<li>
-
-<a class="dropdown-item">
-
-Shorts
-
-</a>
-
-</li>
+<li><a class="dropdown-item" href="#">Shorts</a></li>
 
 </ul>
 
 </li>
 
-
 <li class="nav-item">
-
-<a class="nav-link">
-
-Women
-
-</a>
-
+<a class="nav-link" href="#">Women</a>
 </li>
 
-
 <li class="nav-item">
-
-<a class="nav-link">
-
-Kids
-
-</a>
-
+<a class="nav-link" href="#">Kids</a>
 </li>
 
-
 <li class="nav-item">
-
-<a class="nav-link">
-
-Shop
-
-</a>
-
+<a class="nav-link" href="#">Shop</a>
 </li>
 
-
 <li class="nav-item">
-
-<a class="nav-link">
-
+<a class="nav-link" href="#">
 Cart :
-
-<span id="cartCount">
-
-0
-
-</span>
-
+<span id="cartCount">0</span>
 </a>
-
 </li>
-
 
 </ul>
 
@@ -174,138 +78,65 @@ Cart :
 
 </nav>
 
-
-
-
-<!-- Hero -->
-
 <section class="hero">
 
 <div>
 
-<h1>
+<h1>IMPOSSIBLE IS NOTHING</h1>
 
-IMPOSSIBLE IS NOTHING
-
-</h1>
-
-<p>
-
-New Season. New Gear.
-
-</p>
+<p>New Season. New Gear.</p>
 
 <button class="btn btn-primary btn-lg">
-
 Shop Now
-
 </button>
 
 </div>
 
 </section>
 
-
-
-
-<!-- Shop Categories -->
-
 <div class="container py-5">
 
 <h2 class="section-title">
-
 SHOP CATEGORIES
-
 </h2>
-
 
 <div class="row g-4">
 
 <div class="col-md-3">
-
-<div class="shop-box"
-
-onclick="showInfo('running')">
-
+<div class="shop-box">
 <h4>Running</h4>
-
 </div>
-
 </div>
-
-
 
 <div class="col-md-3">
-
-<div class="shop-box"
-
-onclick="showInfo('sneakers')">
-
+<div class="shop-box">
 <h4>Sneakers</h4>
-
 </div>
-
 </div>
-
-
 
 <div class="col-md-3">
-
-<div class="shop-box"
-
-onclick="showInfo('sportswear')">
-
+<div class="shop-box">
 <h4>Sportswear</h4>
-
 </div>
-
 </div>
-
-
 
 <div class="col-md-3">
-
-<div class="shop-box"
-
-onclick="showInfo('accessories')">
-
+<div class="shop-box">
 <h4>Accessories</h4>
-
+</div>
 </div>
 
 </div>
 
 </div>
-
-
-
-<div id="infoBox"
-
-class="info-box">
-
-<h3 id="infoTitle"></h3>
-
-<p id="infoText"></p>
-
-</div>
-
-</div>
-
-
-
-
-<!-- Products -->
 
 <div class="container py-5">
 
 <h2 class="section-title">
-
 SHOP LATEST GEAR
-
 </h2>
 
 <div class="row g-4">
-
 
 <div class="col-md-3">
 
@@ -320,9 +151,7 @@ SHOP LATEST GEAR
 <p>₹12,999</p>
 
 <button class="btn btn-dark add-cart">
-
 Add To Cart
-
 </button>
 
 </div>
@@ -330,8 +159,6 @@ Add To Cart
 </div>
 
 </div>
-
-
 
 <div class="col-md-3">
 
@@ -346,9 +173,7 @@ Add To Cart
 <p>₹8,999</p>
 
 <button class="btn btn-dark add-cart">
-
 Add To Cart
-
 </button>
 
 </div>
@@ -356,8 +181,6 @@ Add To Cart
 </div>
 
 </div>
-
-
 
 <div class="col-md-3">
 
@@ -372,9 +195,7 @@ Add To Cart
 <p>₹7,999</p>
 
 <button class="btn btn-dark add-cart">
-
 Add To Cart
-
 </button>
 
 </div>
@@ -382,8 +203,6 @@ Add To Cart
 </div>
 
 </div>
-
-
 
 <div class="col-md-3">
 
@@ -398,9 +217,7 @@ Add To Cart
 <p>₹10,999</p>
 
 <button class="btn btn-dark add-cart">
-
 Add To Cart
-
 </button>
 
 </div>
@@ -413,22 +230,13 @@ Add To Cart
 
 </div>
 
-
-
 <footer>
-
 © 2026 Adidas Clone | Developed By Nikhil Jaiswal
-
 </footer>
 
-
-
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 <script src="script.js"></script>
 
 </body>
-
 </html>
